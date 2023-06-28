@@ -38,7 +38,7 @@ director2 = Director.create(
   female_director: true
 )
 
-director2.movies.create(
+movie2 = director2.movies.create(
   title: "Frida",
   year: 2002,
   length: 123,
@@ -48,13 +48,32 @@ director2.movies.create(
   discount: false
 )
 
+
+movie2.reviews.create([
+  {
+    author: "Roger Ebert",
+    date: "December 20, 1985",
+    url: "https://www.rogerebert.com/reviews/the-color-purple-1985"        
+  },
+  {
+    author: "Variety Staff",
+    date: "December 31, 1984",
+    url: "https://variety.com/1984/film/reviews/the-color-purple-1200426436/"
+  },
+  {
+    author: "Janet Maslin",
+    date: "December 18, 1985",
+    url: "https://www.nytimes.com/1985/12/18/movies/moviesspecial/the-color-purple.html"
+  }
+])
+
 director3 = Director.create(
   name: "Mira Nair",
   birthplace: "Bhubaneshwar, Orissa, India",
   female_director: true
 )
 
-director3.movies.create(
+movie3 = director3.movies.create(
   title: "Queen of Katwe",
   year: 2016,
   length: 144,
@@ -63,3 +82,22 @@ director3.movies.create(
   category: "Drama",
   discount: false
 )
+
+
+movie3.reviews.create([
+  {
+    author: "Roger Ebert",
+    date: "December 20, 1985",
+    url: "https://www.rogerebert.com/reviews/the-color-purple-1985"        
+  },
+  {
+    author: "Variety Staff",
+    date: "December 31, 1984",
+    url: "https://variety.com/1984/film/reviews/the-color-purple-1200426436/"
+  },
+  {
+    author: "Janet Maslin",
+    date: "December 18, 1985",
+    url: "https://www.nytimes.com/1985/12/18/movies/moviesspecial/the-color-purple.html"
+  }
+])
